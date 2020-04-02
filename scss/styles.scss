@@ -20,4 +20,27 @@ $VeryLightGray: hsl(0, 0%, 98%);
 body {
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
+  background-color: $VeryLightGray;
+  text-align: center;
+}
+
+main {
+  padding-top: 2rem;
+}
+
+section.header-container {
+  h1 {
+    font-size: 30px;
+    font-weight: 200;
+
+    span {
+      display: block;
+      font-weight: 600;
+
+    }
+  }
+}
+
+section.block-container {
+
 }

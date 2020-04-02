@@ -1,2 +1,15 @@
 body {
-  background-color: red; }
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  text-align: center; }
+
+main {
+  padding-top: 2rem; }
+
+section.header-container h1 {
+  font-size: 30px;
+  font-weight: 200; }
+  section.header-container h1 span {
+    display: block;
+    font-weight: 600; }
