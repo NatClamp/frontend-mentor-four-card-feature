@@ -1,15 +1,84 @@
+* {
+  box-sizing: border-box; }
+
 body {
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
   background-color: #fafafa;
-  text-align: center; }
+  color: #a3a5ae;
+  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto; }
 
 main {
-  padding-top: 2rem; }
+  padding: 2rem 0;
+  margin: 10px; }
 
-section.header-container h1 {
-  font-size: 30px;
-  font-weight: 200; }
-  section.header-container h1 span {
-    display: block;
-    font-weight: 600; }
+section.header-container {
+  margin-bottom: 4em; }
+  section.header-container h1 {
+    font-size: 30px;
+    font-weight: 200;
+    color: #4c4e61; }
+    section.header-container h1 span {
+      display: block;
+      font-weight: 600; }
+  section.header-container p {
+    max-width: 500px;
+    margin: 0 auto; }
+
+section.block-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  max-width: 1140px;
+  margin: 0 auto 50px auto; }
+  section.block-container div {
+    background-color: white;
+    box-shadow: 5px 10px 15px rgba(163, 165, 174, 0.5);
+    border-radius: 5px;
+    padding: 25px;
+    margin: 15px;
+    border-top: 5px solid;
+    max-width: 350px;
+    min-height: 250px;
+    text-align: left;
+    position: relative; }
+    section.block-container div h2 {
+      color: #4c4e61;
+      margin-top: 0; }
+    section.block-container div p {
+      font-size: 14px; }
+    section.block-container div img {
+      position: absolute;
+      bottom: 2em;
+      right: 2em; }
+    section.block-container div:nth-child(1) {
+      border-color: #45d3d3;
+      transform: translateY(50%); }
+    section.block-container div:nth-child(2) {
+      border-color: #ea5353; }
+    section.block-container div:nth-child(3) {
+      border-color: #fcaf4a;
+      order: 4; }
+    section.block-container div:nth-child(4) {
+      border-color: #549ef2;
+      order: 3;
+      transform: translateY(50%); }
+
+@media (max-width: 775px) {
+  section.header-container {
+    margin-right: 10px;
+    margin-left: 10px; }
+    section.header-container h1 {
+      font-size: 24px; }
+  section.block-container div:nth-child(1), section.block-container div:nth-child(4) {
+    transform: translateY(0); }
+  section.block-container div:nth-child(3) {
+    order: 3; }
+  section.block-container div:nth-child(4) {
+    order: 4; } }
+
+footer {
+  margin: 3em; }
