@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/NatClamp/frontend-mentor-four-card-feature#readme",
   "dependencies": {
-    "node-sass": "4.13.1"
+    "node-sass": "4.14.1",
+    "yargs-parser": ">=13.1.2"
   }
 }
